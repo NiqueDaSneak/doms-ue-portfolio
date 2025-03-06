@@ -1,0 +1,202 @@
+.cube-container {
+  perspective: 600px;
+  perspective-origin: 50% 50%;
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+}
+
+.cube {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  animation: rotate-cube 10s linear infinite;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  transform: translateZ(50px);
+  animation: change-color 5s linear infinite;
+}
+
+.dot-1 {
+  top: 0;
+  left: 0;
+}
+
+.dot-2 {
+  top: 0;
+  left: 33.33%;
+}
+
+.dot-3 {
+  top: 0;
+  left: 66.67%;
+}
+
+.dot-4 {
+  top: 33.33%;
+  left: 0;
+}
+
+.dot-5 {
+  top: 33.33%;
+  left: 33.33%;
+}
+
+.dot-6 {
+  top: 33.33%;
+  left: 66.67%;
+}
+
+.dot-7 {
+  top: 66.67%;
+  left: 0;
+}
+
+.dot-8 {
+  top: 66.67%;
+  left: 33.33%;
+}
+
+.dot-9 {
+  top: 66.67%;
+  left: 66.67%;
+}
+
+.dot-10 {
+  top: 0;
+  left: 0;
+  transform: translateZ(100px);
+}
+
+.dot-11 {
+  top: 0;
+  left: 33.33%;
+  transform: translateZ(100px);
+}
+
+.dot-12 {
+  top: 0;
+  left: 66.67%;
+  transform: translateZ(100px);
+}
+
+.dot-13 {
+  top: 33.33%;
+  left: 0;
+  transform: translateZ(100px);
+}
+
+.dot-14 {
+  top: 33.33%;
+  left: 33.33%;
+  transform: translateZ(100px);
+}
+
+.dot-15 {
+  top: 33.33%;
+  left: 66.67%;
+  transform: translateZ(100px);
+}
+
+.dot-16 {
+  top: 66.67%;
+  left: 0;
+  transform: translateZ(100px);
+}
+
+.dot-17 {
+  top: 66.67%;
+  left: 33.33%;
+  transform: translateZ(100px);
+}
+
+.dot-18 {
+  top: 66.67%;
+  left: 66.67%;
+  transform: translateZ(100px);
+}
+
+.dot-19 {
+  top: 0;
+  left: 0;
+  transform: translateZ(150px);
+}
+
+.dot-20 {
+  top: 0;
+  left: 33.33%;
+  transform: translateZ(150px);
+}
+
+.dot-21 {
+  top: 0;
+  left: 66.67%;
+  transform: translateZ(150px);
+}
+
+.dot-22 {
+  top: 33.33%;
+  left: 0;
+  transform: translateZ(150px);
+}
+
+.dot-23 {
+  top: 33.33%;
+  left: 33.33%;
+  transform: translateZ(150px);
+}
+
+.dot-24 {
+  top: 33.33%;
+  left: 66.67%;
+  transform: translateZ(150px);
+}
+
+.dot-25 {
+  top: 66.67%;
+  left: 0;
+  transform: translateZ(150px);
+}
+
+.dot-26 {
+  top: 66.67%;
+  left: 33.33%;
+  transform: translateZ(150px);
+}
+
+.dot-27 {
+  top: 66.67%;
+  left: 66.67%;
+  transform: translateZ(150px);
+}
+
+@keyframes rotate-cube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #333;
+  }
+  50% {
+    background-color: #666;
+  }
+  100% {
+    background-color: #333;
+  }
+}

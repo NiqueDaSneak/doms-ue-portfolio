@@ -17,19 +17,25 @@
   },
   "dependencies": {
     "gatsby": "^5.14.1",
+    "gatsby-plugin-ffmpeg": "^0.6.4",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-sass": "^6.14.0",
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-ffmpeg": "^0.5.5",
     "gatsby-transformer-sharp": "^5.14.0",
+    "gatsby-video": "^0.2.0",
+    "howler": "^2.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-player": "^2.16.0",
     "sass": "^1.85.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "file-loader": "^6.2.0",
     "typescript": "^5.3.3"
   }
 }
