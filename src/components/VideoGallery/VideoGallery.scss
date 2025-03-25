@@ -1,0 +1,23 @@
+.video-gallery {
+  display: grid;
+  gap: 70px;
+}
+
+.video-section {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
+.video-title {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.video-element {
+  width: 80%;
+  @include mobile {
+    width: 100%;
+  }
+}

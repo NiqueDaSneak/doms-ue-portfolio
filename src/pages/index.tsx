@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './index.scss';
+import './main.scss';
 import type { HeadFC, PageProps } from 'gatsby';
-import VideoGallery from '../components/VideoGallery';
+import VideoGallery from '../components/VideoGallery/VideoGallery';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -20,4 +21,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Dom Clemmer: Engineer</title>;
