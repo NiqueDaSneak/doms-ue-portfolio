@@ -1,7 +1,9 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import BakeryVideo from '../assets/BakeryScene.mp4';
 import CarVideo from '../assets/CarScene.mp4';
-import TestAudio from '../assets/audio.mp3';
+import SplineVideo from '../assets/ai-car-spline.mp4';
+import CarSceneAudio from '../assets/car-scene-audio.mp3';
+import BakeryAudio from '../assets/bakery-audio.mp3';
 
 const VideoGallery = () => {
   const [videos, setVideos] = useState([
@@ -10,7 +12,7 @@ const VideoGallery = () => {
       title: 'Bakery Introduction',
       description: 'This is video 1',
       video: BakeryVideo,
-      audio: TestAudio,
+      audio: BakeryAudio,
       //   thumbnail: './video1-thumbnail.jpg',
     },
     {
@@ -18,7 +20,15 @@ const VideoGallery = () => {
       title: 'Car Scene',
       description: 'This is video 2',
       video: CarVideo,
-      audio: TestAudio,
+      audio: CarSceneAudio,
+      //   thumbnail: './video2-thumbnail.jpg',
+    },
+    {
+      id: 2,
+      title: 'AI Cars Following Splines',
+      description: 'This is video 2',
+      video: SplineVideo,
+      // audio: TestAudio,
       //   thumbnail: './video2-thumbnail.jpg',
     },
     // Add more videos here
@@ -47,8 +57,10 @@ const VideoGallery = () => {
             <span style={{ fontSize: '16pt', fontWeight: 'bold' }}>
               {video.title}
             </span>
-            <audio id={`audio-${video.id}`} controls src={video.audio} />
-            <video controls style={{ width: '50%', borderRadius: '50px' }}>
+            {video.audio && (
+              <audio id={`audio-${video.id}`} controls src={video.audio} />
+            )}
+            <video controls style={{ width: '50%' }}>
               <source src={video.video} type="video/mp4" />
             </video>
           </section>
